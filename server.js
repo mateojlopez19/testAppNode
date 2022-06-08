@@ -11,7 +11,7 @@ app.use(bodyParser.json()); // Aceptar formato json
 // app.use(morgan('combined'));
 
 // Routes
-app.use('/api/users', require('./api/users'));
+app.use('/api/v1/users', require('./api/v1/routes/users.routes'));
 
 app.get('/', (req, res) => {
     res.send({message: 'Hello ADSI 2231424'});
